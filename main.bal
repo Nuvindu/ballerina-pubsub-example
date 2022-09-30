@@ -28,9 +28,6 @@ public function main() returns error? {
         }
     }
 
-    @strand {
-        thread: "any"
-    }
     worker B {
         foreach int i in 0 ..< 3 {
 	        record {|string value;|}|error? newValue = subscriber1.next();
